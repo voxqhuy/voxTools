@@ -1,9 +1,14 @@
 .wrapper {
+	display: flex;
 	width: 100%;
 }
 
 #sidebar {
 	width: 250px;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	z-index: 999;
 	position: fixed;
 	background: #7386D5;
 	color: #fff;
