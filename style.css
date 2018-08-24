@@ -1,0 +1,39 @@
+.tool-container {
+	width: 100%;
+	height: 50vh;
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+}
+#time-card {
+	background-color: #322343;
+}
+
+.input {
+	width: 100%;
+	height: 50vh;
+	grid-row: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+
+.input-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#current-hours {
+	grid-column: 1;
+
+}
+
+#period-picker {
+	grid-column: 2;
+}
+
+.output {
+	grid-row: 2;
+	text-align: center;
+}
+
