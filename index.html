@@ -49,26 +49,58 @@
       </div>
     </nav>
 
+    <div id="timeCard">
+
+    </div>
+    <p> 
+      This tool is for me to remind myself clocking in and out on time so that 
+      I will not violate my visa status
+    </p>
     <div class="row" id="timeCard">
       <div class="col-lg-6">
-        <h4>Enter time in minutes</h4>
+        <h4>Time to convert</h4>
+        <div class="form-group">
+            <input type="time" class="form-control without_ampm" id="timeToConvert">
+        </div>
       </div>
       <div class="col-lg-6">
         <h4>Result in decimal</h4>
+        <fieldset disabled>
+          <div class="form-group">
+              <input type="text" class="form-control" id="timeDecimal">
+          </div>
+        </fieldset>
       </div>
     </div>
 
+    <div class="line"></div>
+
     <div class="row">
         <div class="col-lg-6">
-          <h4>Enter time in minutes</h4>
+          <h4>The current number of hours</h4>
+          <div class="form-group">
+            <input type="text" class="form-control" id="currentHours" placeholder="Example: 15">
+          </div>
         </div>
+        
         <div class="col-lg-6">
-          <h4>Result in decimal</h4>
+          <h4>Time started working today</h4>
+          <div class="form-group">
+              <input type="time" class="form-control" id="startTime">
+          </div>
         </div>
       </div>
 
       <div class="row">
+        <div class="col-lg-12">
+            <h4>Time you need to clock out</h4>
+            <fieldset disabled>
+              <div class="form-group">
+                  <input type="time" class="form-control" id="timeToClockOut">
+              </div>
+            </fieldset>
         </div>
+      </div>
   </div>
 </div>
 
