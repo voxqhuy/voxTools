@@ -162,6 +162,10 @@ a.article:hover {
     width: 100%;
 }
 
+.validation {
+    visibility: hidden;
+}
+
 #timeCard {
 	align-content: center;
 }

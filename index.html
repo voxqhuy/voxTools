@@ -79,14 +79,15 @@
         <div class="col-md-6">
           <h4>The current number of hours</h4>
           <div class="form-group">
-            <input type="text" class="form-control" id="currentHours" placeholder="Example: 15">
+            <input type="text" class="form-control" id="currentHours" placeholder="Example: 15.5">
+            <small class="form-text text-danger validation" id="currentHoursError">Please enter a valid number</small>
           </div>
         </div>
         
         <div class="col-md-6">
           <h4>Time started working today</h4>
           <div class="form-group">
-              <input type="time" class="form-control" id="startTime">
+              <input type="time" class="form-control" id="startingTime">
           </div>
         </div>
       </div>
@@ -96,7 +97,7 @@
             <h4>Time you need to clock out</h4>
             <fieldset disabled>
               <div class="form-group">
-                  <input type="time" class="form-control" id="timeToClockOut">
+                  <input type="time" class="form-control" id="endingTime">
               </div>
             </fieldset>
         </div>
