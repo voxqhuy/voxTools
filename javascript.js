@@ -80,7 +80,7 @@ $(document).ready(function() {
             var startingMinute = startingTime.split(":")[1];
             let minutes = parseInt(startingMinute) + parseInt(startingHour) * 60;
 
-            minutes = minutes + leftoverMinutes;
+            minutes = minutes + leftoverMinutes - 1;
             let endingHour = parseInt(minutes % 60 > 24 ? minutes % 60 - 24 : minutes / 60);
             let endingMinute = minutes % 60;
             let endingMinuteString = endingMinute < 10 ? '0' + endingMinute.toString() : endingMinute.toString();
