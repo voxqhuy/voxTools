@@ -37,7 +37,6 @@ $(document).ready(function() {
     });
 
     $('#currentHours').change(function() {
-        var regex = '\d+\.*\d*';
         var currentHours = $(this).val();
 
         if (/^\d+(\.\d+)?$/.test(currentHours)) {
@@ -73,15 +72,17 @@ $(document).ready(function() {
         if (areCurrentHoursValid && isStartedTimeValid) {
             let currentHours = parseFloat($('#currentHours').val());
             let leftoverHours = 20.0 - currentHours;
-            let leftoverMinutes = leftoverHours * 60;
+            let leftoverMinutes = parseInt(leftoverHours * 60);
             
             let startingTime = $('#startingTime').val();
             let startingHour = startingTime.split(":")[0];
             var startingMinute = startingTime.split(":")[1];
-            let minutes = parseInt(startingMinute) + parseInt(startingHour) * 60;
+            console.log(parseInt(startingMinute));
+            console.log(parseInt(startingHour));
+            var minutes = parseInt(startingMinute) + parseInt(startingHour) * 60;
 
             minutes = minutes + leftoverMinutes - 1;
-            let endingHour = parseInt(minutes % 60 > 24 ? minutes % 60 - 24 : minutes / 60);
+            let endingHour = parseInt(minutes / 60 > 24 ? (minutes / 60 - 24) : (minutes / 60));
             let endingMinute = minutes % 60;
             let endingMinuteString = endingMinute < 10 ? '0' + endingMinute.toString() : endingMinute.toString();
 
