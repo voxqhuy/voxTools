@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Vo Tools</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  
+</head>
+
+<body>
+
+<div class="wrapper">
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <h3>VOX</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+      <li>
+        <a href="index.html">20 hours</a>
+      </li>
+      <li class="active">
+        <a href="#38hours">38 hours</a>
+      </li>
+      <li>
+        <a href="#tool2">Coming Soon, invest NOW</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Page Content -->
+  <div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button type="button" id="sidebarCollapse" class="btn btn-info">
+          <i class="fas fa-align-left"></i>
+          <span>Menu</span>
+        </button>
+      </div>
+    </nav>
+
+    
+    <p> 
+      This tool is for me to remind myself clocking in and out on time so that 
+      I will not violate my visa status
+    </p>
+    <div class="row" id="timeCard">
+      <div class="col-md-6">
+        <h4>Time to convert</h4>
+        <div class="form-group">
+            <input type="time" class="form-control" id="timeToConvert"  min='01:00' max= '03:00'>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h4>Result in decimal</h4>
+        <fieldset disabled>
+          <div class="form-group">
+              <input type="text" class="form-control" id="decimalTime" placeholder="0.0">
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+      <div class="line"></div>
+
+      <div id="38hours">
+      </div>
+
+  <h2>38-hour limit</h2>
+    <div class="row">
+        <div class="col-md-6">
+          <h4>The current number of hours</h4>
+          <div class="form-group">
+            <input type="text" class="form-control" id="currentHours38" placeholder="Example: 35.5">
+            <small class="form-text text-danger validation" id="currentHoursError">Please enter a valid number</small>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <h4>Time started working today</h4>
+          <div class="form-group">
+              <input type="time" class="form-control" id="startingTime38">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h4>Time you need to clock out</h4>
+            <fieldset disabled>
+              <div class="form-group">
+                  <input type="time" class="form-control" id="endingTime38">
+              </div>
+            </fieldset>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+  <!-- jQuery CDN - Minified version -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="javascript38.js"></script>
+</body>
+</html>
